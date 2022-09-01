@@ -1,0 +1,35 @@
+@media (max-width: 48em) {
+  .hero-section {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .hamburger {
+    display: block;
+    z-index: 9999;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-list {
+    position: fixed;
+    padding: 12rem 0;
+    left: -100%;
+    top: 0;
+    gap: 4.8rem;
+    z-index: 0;
+    flex-direction: column;
+    background-color: var(--accent);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .nav-list.active {
+    left: 0;
+  }
+}
