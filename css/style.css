@@ -316,6 +316,9 @@ blockquote{
   color: #fff;
   max-width: 90rem;
   margin: 3.6rem auto 0;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 0 4px 1px rgba(63, 90, 153,0.2);
 }
 .contact-items{
   padding:4.8rem 0;
@@ -347,7 +350,7 @@ blockquote{
 .contact-form{
  
   /* background-image:linear-gradient(rgba(0,0,0,0.9),rgba(0, 0, 0, 0.9)),url("/assets/bg-contact.png"); */
-  background-color: var(--background-secondary);
+  background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
@@ -375,8 +378,18 @@ blockquote{
   padding: 2.4rem 3.6rem;
 }
 .contact-info h3{
+  position: relative;
   font-size: 2.2rem;
   margin-bottom: 2.8rem;
+}
+.contact-info h3::after{
+  content: "";
+  position: absolute;
+  background-color:#369641;
+  height: 4px;
+  width: 70px;
+  left: 0;
+  bottom: -5px;
 }
 .input-group{
   display: flex;
@@ -421,7 +434,15 @@ textarea{
   background-color: #2b8a36;
 }
 
-
+.defination{
+  padding: 9.6rem 0;
+}
+.def-description{
+  font-size: 1.6rem;
+}
+.def-quote{
+  margin-bottom: 1.6rem;
+}
 
 /* footer */
 footer{
