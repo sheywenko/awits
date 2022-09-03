@@ -236,6 +236,66 @@ header {
   font-weight: 600;
 }
 .about-image{
-  border-radius: 45px 0 45px 0;
+  border-radius: 35px 0 35px 0;
   overflow: hidden;
+}
+/* volunteer */
+.volunteer{
+  background-color: #fff;
+  padding: 9.6rem 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.volunteer-text{
+  font-size: 1.6rem;
+}
+.person{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width:70rem;
+  gap: 4.8rem;
+  margin: 4.8rem auto 0;
+}
+.person-text{
+  position: relative;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+  padding: 2.4rem;
+  border-radius: 5px;
+  background-color: #fff;
+  overflow: hidden;
+
+}
+.square{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 10rem;
+  width: 100%;
+  background-color: #369641;
+  z-index: -1;
+}
+.quote{
+  max-width: 4.8rem;
+  color: #3f5a99;
+}
+blockquote{
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
+.person-image img{
+  object-fit: cover;
+  max-width:9rem ;
+  height: 9rem;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+.person-details{
+  text-align: center;
+}
+.person-details h4{
+  font-size: 1.4rem;
+  color: #369641;
+}
+.person-details{
+  z-index: 50;
 }
