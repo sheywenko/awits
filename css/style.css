@@ -210,3 +210,32 @@ header {
     border-radius: 50%;
   }
 }
+/* about us */
+.about-us{
+  background-color: #fff;
+  padding: 9.6rem 0;
+}
+.about-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 3.6rem;
+}
+.about-text{
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+.about-description{
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--primary-text);
+}
+.about-description span {
+  color: #369641;
+  font-weight: 600;
+}
+.about-image{
+  border-radius: 45px 0 45px 0;
+  overflow: hidden;
+}
