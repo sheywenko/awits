@@ -49,6 +49,21 @@
  .contact-container{
    grid-template-columns: 1fr;
  }
+ .counter-flex{
+   grid-template-columns: 1fr;
+ }
+ /* join */
+ .member-container, .mentor-container{
+   grid-template-columns: 1fr;
+ }
+ .mentor-text{
+  order: 2;
+ }
+
+ .def-quote{
+   background-color: #264386;
+   padding: 1.6rem;
+ }
 }
 @media (max-width: 40em) {
   .hero-text-box h1 {
