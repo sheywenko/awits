@@ -66,9 +66,9 @@
   order: 2;
  }
 
- .def-quote{
-   background-color: #2e5473;
-   padding: 1.6rem;
+
+ .contact-info{
+   padding: 2.4rem 2rem;
  }
 }
 @media (max-width: 40em) {
