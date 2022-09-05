@@ -42,6 +42,12 @@
   .about-container{
     grid-template-columns: 1fr;
   }
+  .about-description,.contact-description,.join-subtitle,.volunteer-text,.def-description{
+    font-size: 1.6rem;
+  }
+  .member-text p,.mentor-text p, blockquote, .quote{
+    font-size: 1.4rem;
+  }
  /* volunteer */
  .person{
    grid-template-columns: 1fr;
@@ -61,7 +67,7 @@
  }
 
  .def-quote{
-   background-color: #264386;
+   background-color: #2e5473;
    padding: 1.6rem;
  }
 }

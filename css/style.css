@@ -1,19 +1,24 @@
 :root {
-  --primary-color: #3f5a99;
-  --secondary-color: #2c3f6b;
-  --background-color: #eceff5;
-  --background-secondary: #d9deeb;
+  --primary-color: #4178a4;
+  --secondary-color: #315a7b;
+  --background-color: #f6f7fa;
+  --background-secondary: #315a7b;
   --footer-background: #3f5a99;
-  --accent: #c5cee0;
+  --accent: #8c9cc2;
   --primary-text: #555;
   --paragraph-text: #666;
 }
 .home {
   position: relative;
-  background-color: #eceff5a2;
+  background-color: var(--background-color);
 }
 header {
   position: relative;
+  top: 0;
+  max-width: 120rem;
+
+ 
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -82,7 +87,7 @@ header {
   margin-bottom: 2.4rem;
 }
 .hero-text-box span {
-  color: #369641;
+  color: var(--lemon);
 }
 .hero-text-box p {
   font-size: 2rem;
@@ -227,12 +232,12 @@ header {
   gap: 1.8rem;
 }
 .about-description{
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 500;
   color: var(--primary-text);
 }
 .about-description span {
-  color: #369641;
+  color: var(--lemon);
   font-weight: 600;
 }
 .about-image{
@@ -250,7 +255,7 @@ header {
   text-align: center;
 }
 .volunteer-text{
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 .heading{
   position: relative;
@@ -297,12 +302,17 @@ header {
   z-index: -1;
 } */
 .quote{
-  max-width: 4.8rem;
-  color: #3f5a99;
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+}
+.quote .fa{
+  font-size: 3.6rem;
+  color:var(--background-secondary);
 }
 blockquote{
-  font-size: 1.4rem;
-  margin-top: 2rem;
+  font-size: 1.6rem;
+  margin: 2rem 0;
 }
 .person-image img{
   object-fit: cover;
@@ -316,10 +326,10 @@ blockquote{
 }
 .person-details h4{
   font-size: 1.6rem;
-  color: #369641;
+  color: var(--lemon);
 }
 .role{
-  font-size: 1.4REM;
+  font-size: 1.4rem;
 }
 .person-details{
   z-index: 50;
@@ -333,13 +343,17 @@ margin-top:0.6rem;
 .person-socials .fa{
   font-size: 1.8rem;
   color: #555;
+  transition: .4s ease-in-out;
+}
+.person-socials .fa:hover{
+  color: var(--background-secondary);
 }
 /* contact */
 .contact{
   padding: 9.6rem 0;
 }
 .contact-description{
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 .contact-container{
   display: grid;
@@ -379,8 +393,9 @@ margin-top:0.6rem;
   color: #555;
 }
 .contact-text p{
-  font-size: 1.4rem;
-  color: #369641;
+  font-size: 1.6rem;
+  color: var(--lemon);
+  font-weight: 600;
 }
 .contact-form{
  
@@ -401,15 +416,15 @@ margin-top:0.6rem;
   gap: 1.2rem;
 }
 .contact-socials .fa{
-  font-size: 2rem;
-  color: #3f5a99;
+  font-size: 2.8rem;
+  color: var(--background-secondary);
   transition: .4s ease-in-out;
 }
 .contact-socials .fa:hover{
   color: #3365da;
 }
 .contact-info{
-  background-color: #3f5a99;
+  background-color: var(--background-secondary);
   padding: 2.4rem 3.6rem;
 }
 .contact-info h3{
@@ -420,7 +435,7 @@ margin-top:0.6rem;
 .contact-info h3::after{
   content: "";
   position: absolute;
-  background-color:#369641;
+  background-color:#59b438;
   height: 4px;
   width: 70px;
   left: 0;
@@ -436,7 +451,8 @@ margin-top:0.6rem;
   font-size: 1.6rem;
 }
 .input-group span{
-  color: red;
+  color: rgb(250, 52, 52);
+  font-weight: 700;
 }
 .input-group input{
   padding: 1.2rem 1.6rem;
@@ -458,9 +474,9 @@ textarea{
   border-radius: 5px;
   border: none;
   margin-top: 1.2rem;
-  background-color: #369641
+  background-color: var(--lemon)
   ;color: #fff;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 500;
   cursor: pointer;
   transition: .4s;
@@ -471,7 +487,7 @@ textarea{
 
 .defination{
   padding: 9.6rem 0;
-  background-color: #3f5a99;
+  background-color: var(--background-secondary);
   color: #fff;
 }
 .def-description{
@@ -480,37 +496,39 @@ textarea{
 }
 .def-head{
   color: #fff !important;
-  margin-bottom: 1rem;
+  margin-bottom: 5.2rem !important;
 }
 .def-head::after{
-  background-color: #369641 !important;
+  background-color: #59b438 !important;
 }
 .def-quote{
   margin-bottom: 2.6rem;
-  border-left:3px solid #369641;
+  border-left:3px solid #59b438;
   border-radius: 4px;
   padding-left: 1.2rem;
+  line-height: 1.6;
 }
 .author{
   font-style: italic;
-  color: #369641;
+  color: #59b438;
+  font-weight: 500;
 }
 /* counter */
 .counter{
   padding: 9.6rem 0;
-  background-color: #3f5a99;
+  background-color: var(--background-secondary);
 }
 .counter-flex{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   text-align: center;
-  gap: 2.4rem;
+  gap: 2rem;
 }
 .counter-item{
   display: flex;
   flex-direction: column;
-  gap: 3.2rem;
-  padding: 1.4rem;
+  gap: 2rem;
+  padding: 2rem 1.4rem;
  min-width: 20rem;
  margin: auto;
  align-items: center;
@@ -521,19 +539,28 @@ backdrop-filter: blur(8.3px);
 -webkit-backdrop-filter: blur(8.3px);
 border: 1px solid rgba(255, 255, 255, 0.22);
 }
-
+.counter-icon{
+width: 5rem;
+height: 5rem;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+  background-color: var(--secondary-color);
+}
 .counter-icon .fa{
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   color: #fff;
   padding: 0.9rem;
-  background-color: #3f5a99;
-  border-radius: 50%;
+ 
 }
 .counter-no{
-  font-size: 2.2rem;
+  font-size: 2.8rem;
+  font-weight: 600;
 }
 .counter-description{
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  font-weight: 500;
   line-height: 2.4;
 }
 /* Join */
@@ -546,7 +573,7 @@ border: 1px solid rgba(255, 255, 255, 0.22);
   padding: 9.6rem 0;
 }
 .join-subtitle{
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 500;
   margin-bottom: 2.8rem;
 }
@@ -563,7 +590,7 @@ border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: 20px 0 20px 0;
   overflow: hidden;
   display: flex;
-  border: 3px solid #888;
+ 
   /* max-width: 80%;
   margin-left: auto;
   justify-content: end; */
@@ -579,13 +606,14 @@ border: 1px solid rgba(255, 255, 255, 0.22);
 
 }
 .member-text p,.mentor-text p{
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  line-height: 1.4;
   margin-bottom: 3.2rem;
 }
 /* footer */
 footer{
   padding: 3.2rem 0;
-  background-color: #3f5a99;
+  background-color: var(--background-secondary);
 }
 footer p{
   color: #fff;

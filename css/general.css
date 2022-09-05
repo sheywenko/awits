@@ -22,7 +22,7 @@ Large: 1.8
 0.75px
 
 --- 02 COLORS
-
+#3f5a99;
 
 
 --- 05 SHADOWS
@@ -40,12 +40,13 @@ Default: 7px
 */
 @import url("https://fonts.googleapis.com/css2?family=Exo:wght@200;300;400;500;600;700&display=swap");
 :root {
-  --primary-color: #3f5a99;
-  --secondary-color: #2c3f6b;
-  --background-color: #eceff5;
-  --background-secondary: #d9deeb;
+  --primary-color: #4178a4;
+  --secondary-color: #315a7b;
+  --background-color: #f6f7fa;
+  --background-secondary: #396990;
   --footer-background: #3f5a99;
   --accent: #c5cee0;
+  --lemon: #50a232;
   --primary-text: #444;
   --paragraph-text: #666;
 }
@@ -58,6 +59,7 @@ Default: 7px
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -170,11 +172,7 @@ img{
   transition: all 0.3s;
 }
 
-.btn--full:link,
-.btn--full:visited {
-  background-color: #e67e22;
-  color: #fff;
-}
+
 
 .btn:hover,
 .btn:active {
@@ -246,10 +244,10 @@ img{
   color: #e67e22;
 }
 
-*:focus {
+/* *:focus {
   outline: none;
   box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
-}
+} */
 
 .margin-right-sm {
   margin-right: 1.6rem !important;
