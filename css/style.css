@@ -58,7 +58,7 @@ header {
   display: block;
   width: 25px;
   height: 3px;
-  margin: 5px auto;
+  margin: 4px auto;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   background-color: var(--secondary-color);
