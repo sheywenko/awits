@@ -20,5 +20,5 @@ year.textContent = updatedYear;
 
 // AOS
 AOS.init({
-    duration:1000
+    duration:800
   });

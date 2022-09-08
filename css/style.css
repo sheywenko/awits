@@ -92,7 +92,7 @@ header {
 .hero-text-box p {
   font-size: 2rem;
   font-weight: 500;
-  line-height: 1.6;
+  line-height: 1.4;
   color: var(--paragraph-text);
   margin-bottom: 3.6rem;
 }
@@ -256,6 +256,14 @@ header {
 }
 .volunteer-text{
   font-size: 1.8rem;
+}
+.btn-volunteer{
+  display: inline-block;
+  font-weight: 600;
+  font-style: italic;
+color: var(--lemon);
+font-size: 2.2rem;
+margin: 0 0.4rem;
 }
 .heading{
   position: relative;
@@ -619,10 +627,19 @@ border-radius: 50%;
   color: #3f5a99;
 
 }
+.mentor-text h2{
+  color: var(--lemon);
+}
 .member-text p,.mentor-text p{
   font-size: 1.6rem;
   line-height: 1.4;
   margin-bottom: 3.2rem;
+}
+.btn-mentor{
+  background-color: var(--lemon) !important;
+}
+.btn-mentor:hover{
+  background-color: #2b8a36 !important;
 }
 /* footer */
 footer{
