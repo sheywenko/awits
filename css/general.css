@@ -39,7 +39,7 @@ Default: 7px
 - Spacing system (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
-@import url("https://fonts.googleapis.com/css2?family=Exo:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap");
 :root {
   --primary-color: #4178a4;
   --secondary-color: #315a7b;
@@ -64,7 +64,10 @@ html {
 }
 
 body {
-  font-family: "Exo", sans-serif;
+  /* display: flex;
+  flex-direction: column; */
+  position: relative;
+  font-family: "Inter", sans-serif;
   overflow-x: hidden;
   color: var(--primary-text);
 }
@@ -103,7 +106,6 @@ img {
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
 }
-
 
 .heading-primary,
 .heading-secondary,
@@ -226,5 +228,3 @@ img {
   outline: none;
   box-shadow: 0 0 0 0.1rem var(--primary-text);
 }
-
-

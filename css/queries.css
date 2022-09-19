@@ -1,5 +1,5 @@
 @media (max-width: 48em) {
-  .heading-primary{
+  .heading-primary {
     font-size: 2.8rem;
   }
   .hero-section {
@@ -19,7 +19,7 @@
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-7px) rotate(-45deg);
   }
-  .logo{
+  .logo {
     height: 4.8rem;
   }
   .nav-list {
@@ -42,37 +42,47 @@
     font-size: 2.4rem;
   }
   /* about-us */
-  .about-container{
+  .about-container {
     grid-template-columns: 1fr;
   }
-  .about-description,.contact-description,.join-subtitle,.volunteer-text,.def-description{
+  .about-description,
+  .contact-description,
+  .join-subtitle,
+  .volunteer-text,
+  .def-description {
     font-size: 1.6rem;
   }
-  .member-text p,.mentor-text p, blockquote, .quote{
+  .member-text p,
+  .mentor-text p,
+  blockquote,
+  .quote {
     font-size: 1.4rem;
   }
- /* volunteer */
- .person{
-   grid-template-columns: 1fr;
- }
- .contact-container{
-   grid-template-columns: 1fr;
- }
- .counter-flex{
-   grid-template-columns: 1fr;
- }
- /* join */
- .member-container, .mentor-container{
-   grid-template-columns: 1fr;
- }
- .mentor-text{
-  order: 2;
- }
+  /* volunteer */
+  .person {
+    grid-template-columns: 1fr;
+  }
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+  .counter-flex {
+    grid-template-columns: 1fr;
+  }
+  /* join */
+  .member-container,
+  .mentor-container {
+    grid-template-columns: 1fr;
+  }
+  .mentor-text {
+    order: 2;
+  }
 
-
- .contact-info{
-   padding: 2.4rem 2rem;
- }
+  .contact-info {
+    padding: 2.4rem 2rem;
+  }
+  .btn-volunteer {
+    font-size: 1.8rem;
+  }
 }
 @media (max-width: 40em) {
   .hero-text-box h1 {
