@@ -39,14 +39,14 @@ Default: 7px
 - Spacing system (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700;800&display=swap");
 :root {
   --primary-color: #4178a4;
   --secondary-color: #315a7b;
   --background-color: #f6f7fa;
-  --background-secondary: #4178a4;
+  --background-secondary: #6793b6;
   --footer-background: #3f5a99;
-  --accent: #8daec8;
+  --accent: #6793b6;
   --lemon: #50a232;
   --primary-text: #444;
   --paragraph-text: #666;
@@ -67,7 +67,7 @@ body {
   /* display: flex;
   flex-direction: column; */
   position: relative;
-  font-family: "Inter", sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
   overflow-x: hidden;
   color: var(--primary-text);
 }
@@ -77,6 +77,7 @@ body {
 /**************************/
 img {
   max-width: 100%;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
 }
 .container {
   /* 1140px */
@@ -159,8 +160,8 @@ img {
   display: inline-block;
   background-color: var(--primary-color);
   text-decoration: none;
-  font-size: 1.8rem;
-  font-weight: 600;
+  font-size: 1.6rem;
+  font-weight: 500;
   padding: 1.2rem 2.4rem;
   border-radius: 7px;
   border: none;
