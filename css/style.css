@@ -81,25 +81,7 @@ header {
   transform: scaleX(-1);
   border-radius: 5px;
 }
-/* .hero-image-box::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 60.5%;
-  transform: translate(-50%, -50%);
-  border-radius: 41% 59% 27% 73% / 69% 64% 36% 31%;
-  width: 80%;
-  padding-bottom: 80%;
 
-  background-color: hsla(206, 43%, 44%, 1);
-  background-image: radial-gradient(
-      at 81% 8%,
-      hsla(222, 70%, 66%, 1) 0px,
-      transparent 50%
-    ),
-    radial-gradient(at 20% 59%, hsla(143, 79%, 60%, 1) 0px, transparent 70%);
-  z-index: -1;
-} */
 .hero-text-box h1 {
   font-size: 5rem;
   font-weight: 700;
@@ -601,6 +583,10 @@ textarea {
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 2.4;
+}
+.dollar {
+  font-size: 2rem;
+  font-weight: 700;
 }
 /* Join */
 .join-container {
