@@ -80,7 +80,8 @@ img {
   max-width: 100%;
   /* box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1); */
 }
-.container {
+.container,
+.hero-container {
   /* 1140px */
   max-width: 120rem;
   padding: 0 3.2rem;
