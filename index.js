@@ -12,7 +12,6 @@ document.querySelectorAll(".nav-link").forEach((link) => {
   });
 });
 
-
 // Copyright year
 let year = document.querySelector(".year");
 const updatedYear = new Date().getFullYear();
@@ -20,9 +19,5 @@ year.textContent = updatedYear;
 
 // AOS
 AOS.init({
-    duration:800
-  });
-
-
-
-
+  duration: 800,
+});

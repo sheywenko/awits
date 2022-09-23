@@ -13,15 +13,17 @@
   background-color: var(--background-color);
 }
 header {
-  position: relative;
+  position: fixed;
   top: 0;
-  max-width: 120rem;
 
+  /* max-width: 120rem; */
+  width: 100%;
+  background-color: var(--background-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: 7.4rem;
-  padding: 1.2rem 0;
+  padding: 1.2rem 6rem;
   z-index: 1;
 }
 .logo {
@@ -36,14 +38,14 @@ header {
   position: relative;
   text-decoration: none;
   color: var(--primary-text);
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-weight: 500;
 }
 .nav-link:after {
   content: "";
   position: absolute;
   background-color: var(--primary-color);
-  height: 2.5px;
+  height: 3px;
   width: 0;
   left: 0;
   bottom: -5px;
@@ -72,7 +74,7 @@ header {
   grid-template-columns: 1.1fr 0.9fr;
   align-items: center;
   gap: 3.6rem;
-  padding: 1.8rem 0 12.8rem 0;
+  padding: 11.2rem 0 12.8rem 0;
 }
 .hero-image {
   width: 85%;
@@ -100,7 +102,7 @@ header {
 } */
 .hero-text-box h1 {
   font-size: 5rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.2;
   color: var(--primary-text);
   margin-bottom: 3rem;
@@ -110,7 +112,7 @@ header {
 }
 .hero-text-box p {
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.4;
   color: var(--primary-text);
   margin-bottom: 3.6rem;
@@ -259,7 +261,8 @@ header {
   color: var(--lemon);
   font-weight: 400;
 }
-.about-image {
+.about-image img {
+  border: 3px solid #ddd;
   border-radius: 35px 0 35px 0;
   overflow: hidden;
 }
@@ -318,15 +321,7 @@ header {
   background-color: #fff;
   overflow: hidden;
 }
-/* .square{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 10rem;
-  width: 100%;
-  background-color: #369641;
-  z-index: -1;
-} */
+
 .quote {
   display: flex;
   gap: 0.8rem;
@@ -343,13 +338,15 @@ blockquote {
 }
 .person-image img {
   object-fit: cover;
-  max-width: 9rem;
+  width: 9rem;
   height: 9rem;
   border-radius: 50%;
   border: 5px solid #fff;
 }
 .person-details {
   text-align: center;
+
+  /* text-align: center; */
 }
 .person-details h4 {
   font-size: 1.6rem;
@@ -358,9 +355,7 @@ blockquote {
 .role {
   font-size: 1.4rem;
 }
-.person-details {
-  z-index: 50;
-}
+
 .person-socials {
   display: flex;
   gap: 1.2rem;
@@ -430,7 +425,7 @@ blockquote {
 }
 .contact-text a {
   font-size: 1.6rem;
-  color: var(--lemon);
+  color: #fff;
   font-weight: 500;
 }
 .contact-form {
@@ -637,7 +632,7 @@ textarea {
   border-radius: 20px 0 20px 0;
   overflow: hidden;
   display: flex;
-
+  border: 3px solid #ddd;
   /* max-width: 80%;
   margin-left: auto;
   justify-content: end; */
