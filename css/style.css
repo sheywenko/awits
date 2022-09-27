@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --primary-color: #4178a4;
   --secondary-color: #315a7b;
   --background-color: #f6f7fa;
@@ -7,7 +7,7 @@
   --accent: #8c9cc2;
   --primary-text: #555;
   --paragraph-text: #666;
-}
+} */
 .home {
   position: relative;
   background-color: var(--background-color);
@@ -15,7 +15,7 @@
 header {
   position: fixed;
   top: 0;
-
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.025);
   /* max-width: 120rem; */
   width: 100%;
   background-color: var(--background-color);
@@ -27,7 +27,7 @@ header {
   z-index: 1;
 }
 .logo {
-  height: 7.4rem;
+  height: 5.2rem;
 }
 .nav-list {
   list-style: none;
@@ -74,16 +74,18 @@ header {
   grid-template-columns: 1.1fr 0.9fr;
   align-items: center;
   gap: 3.6rem;
-  padding: 11.2rem 0 12.8rem 0;
+  padding: 12.8rem 0;
 }
 .hero-image {
   width: 85%;
   transform: scaleX(-1);
   border-radius: 5px;
+  padding: 4px;
+  border: 2.5px dashed var(--background-secondary);
 }
 
 .hero-text-box h1 {
-  font-size: 5rem;
+  font-size: 5.6rem;
   font-weight: 700;
   line-height: 1.2;
   color: var(--primary-text);
@@ -245,6 +247,7 @@ header {
 }
 .about-image img {
   border: 3px solid #ddd;
+  padding: 4px;
   border-radius: 35px 0 35px 0;
   overflow: hidden;
 }
@@ -263,10 +266,8 @@ header {
 }
 .btn-volunteer {
   display: inline-block;
-  font-weight: 600;
   font-style: italic;
-  color: var(--lemon);
-  font-size: 2.2rem;
+  color: var(--background-secondary);
   margin: 0 0.4rem;
 }
 .heading {
@@ -352,6 +353,7 @@ blockquote {
 .person-socials .fa:hover {
   color: var(--background-secondary);
 }
+
 /* contact */
 .contact {
   background-color: var(--background-color);
@@ -527,7 +529,7 @@ textarea {
   padding-left: 1.2rem;
   line-height: 1.6;
 
-  background-color: #2e5473;
+  background-color: var(--primary-color);
   padding: 1.6rem;
 }
 .author {
@@ -613,15 +615,12 @@ textarea {
   align-items: center;
   gap: 4.8rem;
 }
-.member-image,
-.mentor-image {
-  border-radius: 20px 0 20px 0;
-  overflow: hidden;
-  display: flex;
+
+.member-image img,
+.mentor-image img {
   border: 3px solid #ddd;
-  /* max-width: 80%;
-  margin-left: auto;
-  justify-content: end; */
+  border-radius: 12px;
+  padding: 4px;
 }
 /* .member-text,.mentor-text{
   max-width: 80%;

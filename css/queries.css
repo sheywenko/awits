@@ -1,4 +1,4 @@
-@media (max-width: 48em) {
+@media (max-width: 62em) {
   .hero-container {
     padding: 5rem 2.4rem;
   }
@@ -40,7 +40,7 @@
     position: fixed;
     padding: 12rem 0;
     left: -100%;
-    top: 0;
+    top: 7.8rem;
     gap: 4.8rem;
     z-index: 0;
     flex-direction: column;
@@ -48,6 +48,7 @@
     width: 100%;
     text-align: center;
     transition: 0.3s;
+    height: 100vh;
   }
   .nav-list.active {
     left: 0;
@@ -101,9 +102,6 @@
 
   .contact-info {
     padding: 2.4rem 2rem;
-  }
-  .btn-volunteer {
-    font-size: 1.8rem;
   }
 }
 @media (max-width: 40em) {

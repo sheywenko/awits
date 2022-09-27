@@ -130,8 +130,8 @@ img {
   background-color: var(--primary-color);
   height: 4px;
   width: 70px;
-  left: 10px;
-  bottom: -5px;
+  left: 0;
+  bottom: -10px;
 }
 
 .heading-secondary {
