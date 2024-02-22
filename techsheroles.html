@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/techsheroes.css" />
+    <title>Awits | TechSheroes</title>
+  </head>
+  <body>
+    <section id="hero">
+      <div class="container">
+        <video autoplay loop muted plays-inline class="clip">
+          <source src="assets/video-1.mp4" type="video/mp4" />
+        </video>
+        <div class="info">
+          <div class="nav">
+            <a class="logo" href="index.html"
+              ><img src="assets/logo.png" alt=""
+            /></a>
+          </div>
+          <h3>March 28 2024 | 4:00pm - 6:00pm WAT</h3>
+          <h1>
+            Tech Sheroes <br />
+            Rise
+          </h1>
+          <p>Conference</p>
+          <a
+            class="register"
+            href="https://meeting.zoho.com/meeting/register/embed?sessionId=1052259965"
+            target="_blank"
+            >Register now</a
+          >
+          <div class="launch-time">
+            <div class="time-box">
+              <p id="days">00</p>
+              <span>Days</span>
+            </div>
+            <div class="time-box">
+              <p id="hours">00</p>
+              <span>Hours</span>
+            </div>
+            <div class="time-box">
+              <p id="minutes">00</p>
+              <span>Minutes</span>
+            </div>
+            <div class="time-box">
+              <p id="seconds">00</p>
+              <span>Seconds</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="sub-title">
+        <h2>About the Conference</h2>
+      </div>
+      <div class="flex-about">
+        <div class="flex-about-image">
+          <img src="assets/techsheroes-1.jpg" alt="" />
+        </div>
+        <div class="flex-about-text">
+          <p>
+            Tech Sheroes Rise is focused on Positioning technology sales skill
+            acquisition as a catalyst for transforming African economies from
+            unemployment-challenged to skill-driven
+          </p>
+          <a
+            href="https://meeting.zoho.com/meeting/register/embed?sessionId=1052259965"
+            >Learn more</a
+          >
+        </div>
+      </div>
+    </section>
+    <div class="flex-stat">
+      <div class="flex-item">
+        <span>100+ </span>
+        <p>Attendees across africa</p>
+      </div>
+      <div class="flex-item">
+        <span>50+</span>
+        <p>Tech Sales Leaders from across the globe</p>
+      </div>
+    </div>
+    <section class="speakers">
+      <div class="sub-title">
+        <h2>Speakers</h2>
+      </div>
+      <div class="speaker-container">
+        <div class="speaker-image">
+          <img src="assets/speaker-1.jpg" alt="" />
+        </div>
+        <div class="speaker-details">
+          <div class="speaker-title">
+            <h2>Adora Nwodo</h2>
+            <h3>Founder, NexaScale</h3>
+            <p>
+              Adora Nwodo is a multi-award-winning Senior Software Engineer with
+              8 years of industry experience. She currently works at the
+              intersection of Cloud Engineering, and Developer Platforms and is
+              passionate about the Cloud and Emerging Technologies. She is also
+              the Vice President of the Nigerian chapter of VRAR Association.
+              Her work there involves creating more awareness of Virtual and
+              Augmented Reality Technologies. <br /><br /><br />Apart from
+              building and advocating for the cloud and emerging technologies,
+              Adora is a Digital Creator and the Founder of NexaScale, a social
+              enterprise aimed at fostering the growth and development of
+              technology enthusiasts by providing resources and opportunities
+              for project building and work experience - helping them start and
+              scale their careers. <br /><br /><br />Adora is a USTTI Alumna -
+              The USTTI is a non-profit joint venture between leaders of the
+              U.S. communications industry and ranking officials from the United
+              States Government. She has also been featured by Logitech,
+              TechCabal, ChannelsTV, The CXO Magazine, Techpoint Africa, and
+              more. In 2023, Adora won the WomenTech Network Software
+              Engineering Leader of the Year award, and she was also nominated
+              for the Future Africa Awards Prize for Education.
+              <br /><br /><br />
+              In January 2024, she won the Change Maker of the Year (Tech) award
+              at the Impact Leadership Global Award in Dubai, UAE.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sponsors">
+      <div class="sub-title">
+        <h2>Sponsors</h2>
+      </div>
+      <div class="sponsor-container">
+        <div class="sponsor-image">
+          <img src="assets/rc-logo.webp" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="contact-flex">
+        <div class="contact-items">
+          <h2>Get in touch</h2>
+          <div class="contact-item">
+            <h3>Sponsporship</h3>
+            <p>Sponsorship@awits.net</p>
+            <p>celina@retentionconcierge.com</p>
+          </div>
+          <div class="contact-item">
+            <h3>Speaking slots</h3>
+            <p>jennifer@retentionconcierge.com</p>
+          </div>
+          <div class="contact-item">
+            <h3>Quick partnership chat</h3>
+            <p>+2348089851656</p>
+          </div>
+        </div>
+        <div class="contact-image">
+          <img src="assets/techsheroes-contact.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <script>
+      let countDownTime = new Date("March 28, 2024 16:00:00").getTime();
+      let x = setInterval(function () {
+        let now = new Date().getTime();
+        let distance = countDownTime - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;
+
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("days").innerHTML = "00";
+          document.getElementById("hours").innerHTML = "00";
+          document.getElementById("minutes").innerHTML = "00";
+          document.getElementById("seconds").innerHTML = "00";
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>
