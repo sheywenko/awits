@@ -48,7 +48,7 @@ body {
 }
 .register {
   display: inline-block;
-  background-color: rgb(202, 107, 40);
+  background-color: #4178a4;
   padding: 1rem 2.4rem;
   border-radius: 2rem;
   text-decoration: none;
@@ -56,7 +56,7 @@ body {
   color: #fff;
 }
 .register:hover {
-  background-color: rgb(165, 83, 24);
+  background-color: #315a7b;
 }
 .launch-time {
   display: flex;
@@ -95,7 +95,6 @@ body {
 
 .flex-about-image img {
   width: 100%;
-  max-height: 80%;
   border-radius: 5px;
 }
 .flex-about-text p {
@@ -104,19 +103,22 @@ body {
 }
 .flex-about-text a {
   display: inline-block;
-  background-color: rgb(202, 107, 40);
+  background-color: #4178a4;
   padding: 1rem 2.4rem;
   border-radius: 2rem;
   text-decoration: none;
   font-size: 1.2rem;
   color: #fff;
 }
+.flex-about-text a:hover {
+  color: #315a7b;
+}
 .flex-stat {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2.4rem;
   padding: 2.8rem 5rem;
-  background-color: rgb(202, 107, 40);
+  background-color: #4178a4;
 }
 .flex-stat span {
   display: block;
@@ -126,7 +128,7 @@ body {
   font-weight: 800;
 }
 .flex-stat p {
-  font-size: 2rem;
+  font-size: 1.4rem;
   color: #fff;
   text-align: center;
 }
@@ -138,6 +140,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 4fr;
   gap: 50px;
+  margin-bottom: 4.2rem;
 }
 .speaker-image img {
   width: 100%;
@@ -145,12 +148,20 @@ body {
 .speaker-title p {
   margin-top: 20px;
 }
+.sponsor-container {
+  display: flex;
+  gap: 4.2rem;
+  align-items: center;
+  justify-content: center;
+}
 .sponsors {
   padding: 2.8rem 5rem;
-  background-color: rgb(202, 107, 40);
+  background-color: #4178a4;
 }
 .sponsors .sub-title h2 {
   color: #fff;
+  text-align: center;
+  margin-bottom: 2.4rem;
 }
 .sponsor-image {
   display: flex;
@@ -180,15 +191,25 @@ body {
 .contact-item {
   margin-bottom: 1.8rem;
 }
+.contact-item h3 {
+  color: #4178a4;
+}
 .contact-image img {
   width: 100%;
 }
 footer {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #4178a4;
   height: 10vh;
   margin-top: -5px;
+  color: #fff;
 }
-@media (min-aspect-ratio: 16/9) {
+footer p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1.4rem;
+}
+@media (min-aspect-ratio: 4/3) {
   .clip {
     width: 100%;
     height: auto;
