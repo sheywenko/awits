@@ -219,7 +219,6 @@ footer p {
 @media (max-width: 62em) {
   .clip {
     height: 100vh;
-    right: -23rem;
   }
   .info {
     margin: 1.2rem;
