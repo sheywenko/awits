@@ -155,13 +155,13 @@ body {
   justify-content: center;
 }
 .sponsors {
-  padding: 2.8rem 5rem;
+  padding: 2rem;
   background-color: #4178a4;
 }
 .sponsors .sub-title h2 {
   color: #fff;
   text-align: center;
-  margin-bottom: 2.4rem;
+  /* margin-bottom: 1.4rem; */
 }
 .sponsor-image {
   display: flex;
@@ -213,5 +213,61 @@ footer p {
   .clip {
     width: 100%;
     height: auto;
+  }
+}
+
+@media (max-width: 62em) {
+  @media (min-aspect-ratio: 4/3) {
+    .clip {
+      width: 25%;
+      height: auto;
+    }
+  }
+  .info {
+    margin: 1.2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .info h1 {
+    padding: 1.4rem 0;
+    line-height: 1.2;
+  }
+  .sub-title h2 {
+    font-size: 1.8rem;
+  }
+  .sponsor-container {
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+  .sponsor-image img {
+    width: 10rem;
+  }
+  .about {
+    margin: 2rem;
+  }
+  .flex-about {
+    grid-template-columns: 1fr;
+  }
+  .flex-stat {
+    grid-template-columns: 1fr;
+  }
+  .speakers {
+    margin: 2rem;
+  }
+  .speaker-container {
+    grid-template-columns: 1fr;
+  }
+  .contact-flex {
+    grid-template-columns: 1fr;
+  }
+  .contact-image img {
+    display: none;
+  }
+  .contact-items {
+    margin: 1.8rem;
+    text-align: center;
+  }
+  .contact-items h2 {
+    font-size: 1.8rem;
   }
 }
