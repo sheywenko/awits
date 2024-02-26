@@ -209,7 +209,7 @@ footer p {
   justify-content: center;
   padding-top: 1.4rem;
 }
-@media (min-aspect-ratio: 4/3) {
+@media (min-aspect-ratio: 16/9) {
   .clip {
     width: 100%;
     height: auto;
@@ -217,11 +217,9 @@ footer p {
 }
 
 @media (max-width: 62em) {
-  @media (min-aspect-ratio: 4/3) {
-    .clip {
-      width: 25%;
-      height: auto;
-    }
+  .clip {
+    height: 100vh;
+    right: -23rem;
   }
   .info {
     margin: 1.2rem;
