@@ -224,6 +224,7 @@ footer p {
   }
   .clip {
     height: 100vh;
+    object-fit: none;
   }
   .info {
     margin: 1.2rem;
