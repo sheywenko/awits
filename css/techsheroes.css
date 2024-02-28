@@ -218,7 +218,7 @@ footer p {
 
 @media (max-width: 62em) {
   .clip {
-    height: 100vh;
+    height: 100%;
   }
   .info {
     margin: 1.2rem;
@@ -227,10 +227,13 @@ footer p {
   }
   .info h1 {
     padding: 1.4rem 0;
-    line-height: 1.2;
+    line-height: 1.1;
   }
   .sub-title h2 {
     font-size: 1.8rem;
+  }
+  .flex-about-text p {
+    font-size: 1.1rem;
   }
   .sponsor-container {
     flex-direction: column;
@@ -266,5 +269,12 @@ footer p {
   }
   .contact-items h2 {
     font-size: 1.8rem;
+  }
+}
+@media (max-width: 50em) {
+  .info h1 {
+    padding: 1.4rem 0;
+    line-height: 1.1;
+    font-size: 3rem;
   }
 }
