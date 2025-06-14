@@ -90,6 +90,7 @@
   max-height: 60px;
 }
 
+.mentor-card {max-width: 100%;}
   /* volunteer */
   .person {
     grid-template-columns: 1fr;

@@ -808,6 +808,7 @@ font-size: 2rem;
   margin: 0 auto;
 }
 .mentors h3{
+margin-top: 80px;
   font-size: 2.2rem;
   text-align: center;
 }
@@ -825,7 +826,8 @@ font-size: 2rem;
   border-radius: 8px;
   /* box-shadow: 1px 4px 8px rgba(0, 0.1, 0, 0.1); */
   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
-  width: 250px;
+  max-width: 250px;
+  width: 100%;
   text-align: center;
 }
 

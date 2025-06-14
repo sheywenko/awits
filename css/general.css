@@ -42,13 +42,13 @@ Default: 7px
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 :root {
   /* --primary-color: #4178a4; */
-  --primary-color: #208ae6;
+  --primary-color: #0d69ba;
   --secondary-color: #315a7b;
   --background-color: #f4f9fc;
   /* --background-secondary: #6793b6; */
-  --background-secondary: #1D7ACB;
+  --background-secondary: #0c416f;
   --footer-background: #3f5a99;
-  --accent:#208ae6;
+  --accent:#1262a8;
   /* --lemon: #50a232; */
   --lemon: #1C9A4D;
   --primary-text: #444;
